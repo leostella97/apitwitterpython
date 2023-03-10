@@ -4,7 +4,6 @@ Para começar, você precisará criar uma conta de desenvolvedor no Twitter e cr
 pip install tweepy
 </code>
 Depois de instalar o tweepy, você pode começar a usar a API do Twitter com o Python. Primeiro, importe a biblioteca tweepy e defina as chaves de autenticação da API do Twitter. Você pode fazer isso da seguinte maneira:
-
 <code>
 import tweepy
 
@@ -19,7 +18,6 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 </code>
 Com isso, você pode usar o objeto api para fazer chamadas para a API do Twitter. Por exemplo, para obter os últimos 20 tweets de um determinado usuário, você pode usar o seguinte código:
-
 <code>
 tweets = api.user_timeline(screen_name='nome_do_usuario', count=20)
 for tweet in tweets:
